@@ -40,7 +40,7 @@ nav ul li {
 .bottom {
   display: flex;
   position: sticky;
-  height: 100px;
+  height: 130px;
   background-color: rgb(223, 176, 176);
   bottom: 0;
   color: rgb(209, 35, 35);
@@ -58,12 +58,65 @@ nav ul li {
 }
 
 .svg {
-  width: 50px; /* Set desired width */
-  height: 50px; /* Set desired height */
+  width: 50px;
+  height: 50px;
 }
-.bottom button {
+.songNav {
   border: 0px;
   background: none;
   margin: 0px 12px;
   cursor: pointer;
+}
+
+.container {
+  color: white;
+  min-height: 51vh;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 80px;
+  background-image: url("bg.jpg");
+}
+.songItem {
+  color: black;
+  height: 50px;
+  display: flex;
+  background-color: rgb(194, 228, 226);
+  width: 80%;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+}
+.songItem .playbtn {
+  width: 24px;
+  margin-top: 5px;
+}
+
+.songThumbnail {
+  width: 44px;
+  margin: 0 4px;
+  border-radius: 18px;
+}
+.songlistplay {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.songinfo {
+  position: absolute;
+  font-weight: bolder;
+  color: black;
+  display: flex;
+  align-items: center;
+  left: 10vw;
+}
+
+.songinfo img {
+  opacity: 0;
+  transition: opacity 1 ease-in;
+  height: 22px;
+  width: 51px;
+  margin: 0 8px;
 }
